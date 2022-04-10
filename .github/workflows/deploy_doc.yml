@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=https://json-schema.org/draft-07/schema#
+name: Deploy Doc
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy-doc:
+    name: Deploy documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python runtime
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: "pnpm"
+
+      - name: Install Node dependencies
+        run: |
+          pnpm i
+      - name: Build
+        env:
+          GOOGLE_ANALYTICS_KEY: G-ZJPSKKCMN9
+        run: |
+          pnpm build
+
+      - name: Deploy to deploy-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site
+          publish_branch: deploy-pages
+          force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: 🚀 Deploying to deploy-pages @ ${{ env.GITHUB_SHA }}
+
+      - name: Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            bash <(curl -s -L https://cdn.jsdelivr.net/gh/Dup4/bash-script-snippet@latest/deploy_gh_pages.sh) -r Dup4/blog -d /var/www/dup4.cn
