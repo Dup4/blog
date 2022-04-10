@@ -1,16 +1,16 @@
-site_name: docs starter
-site_url: https://dup4.com/starter-mkdocs-material-docs/
+site_name: Dup4's Blog
+site_url: https://dup4.com/blog/
 site_author: Dup4
 site_description: >-
-  starter-mkdocs-material-docs
+  Dup4's blog
 
 # Repository
-repo_name: Dup4/starter-mkdocs-material-docs
-repo_url: https://github.com/Dup4/starter-mkdocs-material-docs
+repo_name: Dup4/blog
+repo_url: https://github.com/Dup4/blog
 edit_uri: tree/main/docs
 
 # Copyright
-copyright: Copyright &copy; 2022 - Present <a href="https://github.com/Dup4" target="_blank" rel="noopener">Dup4</a>
+copyright: Copyright &copy; 2017 - Present <a href="https://github.com/Dup4" target="_blank" rel="noopener">Dup4</a>
 
 # Configuration
 theme:
@@ -60,7 +60,7 @@ theme:
         name: Switch to light mode
 
   font:
-    text: Roboto
+    text: Georgia
     code: Roboto Mono
 
   favicon: assets/favicon.png
@@ -90,7 +90,7 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Dup4/starter-mkdocs-material-docs
+      link: https://github.com/Dup4/blog
 
 # Extensions
 markdown_extensions:
