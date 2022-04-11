@@ -40,6 +40,7 @@ jobs:
       - name: Build
         env:
           GOOGLE_ANALYTICS_KEY: G-ZJPSKKCMN9
+          ENABLE_MATHJAX: false
         run: |
           pnpm build
 
