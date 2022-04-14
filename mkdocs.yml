@@ -166,4 +166,4 @@ markdown_extensions:
 docs_dir: docs
 
 nav:
-  - Getting Started: index.md
+  - Home: index.md
