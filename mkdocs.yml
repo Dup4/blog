@@ -92,6 +92,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Dup4/blog
 
+extra_css:
+  - stylesheets/extra.css
+
 # Extensions
 markdown_extensions:
   - admonition:
