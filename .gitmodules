@@ -1,0 +1,3 @@
+[submodule "vendor/Google-Coding-Competitions"]
+	path = vendor/Google-Coding-Competitions
+	url = https://github.com/Dup4/Google-Coding-Competitions.git
