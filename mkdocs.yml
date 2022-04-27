@@ -161,6 +161,7 @@ markdown_extensions:
       check_paths: true
       base_path:
         - docs
+        - vendor
   - pymdownx.saneheaders:
 
 docs_dir: docs

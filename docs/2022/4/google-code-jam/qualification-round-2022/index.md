@@ -22,6 +22,13 @@
 
 模拟即可。
 
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Qualification-Round/a/a.cpp
+    ---8<--
+    ```
+
 ### 3D Printing
 
 题意：
@@ -36,6 +43,13 @@
 
 贪心即可。
 
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Qualification-Round/b/b.cpp
+    ---8<--
+    ```
+
 ### d1000000
 
 题意：
@@ -49,6 +63,13 @@
 * 贪心
 * 先不断往右边扩
 * 右边扩不了了再往左边扩
+
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Qualification-Round/c/c.cpp
+    ---8<--
+    ```
 
 ### Chain Reactions
 
@@ -75,6 +96,13 @@
 每次将最小的 fun 值往父亲合并。
 
 其它儿子的值直接加到答案中。
+
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Qualification-Round/d/d.cpp
+    ---8<--
+    ```
 
 ### Twisty Little Passages
 
