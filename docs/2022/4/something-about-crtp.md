@@ -143,7 +143,7 @@ learning-cpp/example/CRTP/polymorphic_chaining.out
 
 使用 CRTP 也能轻易实现派生类的深拷贝，而不用为每个派生类都实现一遍。
 
-其实参考这个 case，可以发现，CRTP 基于模板，有效的使用它，可以比动态多台减少更多的代码重复。
+其实参考这个 case，可以发现，CRTP 基于模板，有效的使用它，可以比动态多态减少更多的代码重复。
 
 ```cpp
 ---8<--
