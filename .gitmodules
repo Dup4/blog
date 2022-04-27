@@ -1,3 +1,6 @@
 [submodule "vendor/Google-Coding-Competitions"]
 	path = vendor/Google-Coding-Competitions
 	url = https://github.com/Dup4/Google-Coding-Competitions.git
+[submodule "vendor/learning-cpp"]
+	path = vendor/learning-cpp
+	url = https://github.com/Dup4/learning-cpp.git
