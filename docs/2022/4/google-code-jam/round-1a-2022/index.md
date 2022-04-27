@@ -31,6 +31,13 @@
 
 对于小 case，$n$ 最大只有 $10$，可以构造出所有可能的字符串，然后排序，取第一个即可。
 
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Round-1A/a/a.cpp
+    ---8<--
+    ```
+
 对于大 case：
 
 我们考虑，假设有一个字符串 $T$，我们能以 $\mathcal{O}(n^2)$ 复杂度的 dp 去判断它能否通过 $S$ 构造出来。
@@ -52,6 +59,13 @@ $$
 \right\}
 = f_{i, j}
 $$
+
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Round-1A/a/a1.cpp
+    ---8<--
+    ```
 
 ### Equal Sum
 
@@ -77,6 +91,13 @@ $n = 100$。
 
 注意给出大的数的过程中要剔除掉 $2$ 的幂次的数。
 
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Round-1A/b/b.cpp
+    ---8<--
+    ```
+
 ### Weightlifting
 
 题意：
@@ -100,3 +121,10 @@ $n = 100$。
 针对小 case：
 
 维护栈中的顺序，`next_permutation` 转移，$\displaystyle ((\frac{9!}{3!})^3)^2 \times 9 \times 3$。
+
+??? info "Code"
+    ```cpp
+    ---8<--
+    Google-Coding-Competitions/CodeJam/2022/Round-1A/c/c.cpp
+    ---8<--
+    ```
