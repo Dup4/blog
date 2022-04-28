@@ -7,6 +7,8 @@
 
 奇异递归模板模式（curiously recurring template pattern，**CRTP**），是 C++ 模板编程时的一种惯用法，即将派生类作为基类的模板参数。
 
+本文所涉及的代码示例地址：[Dup4/learning-cpp](https://github.com/Dup4/learning-cpp/tree/main/example/CRTP)
+
 ## General Form
 
 ```cpp
