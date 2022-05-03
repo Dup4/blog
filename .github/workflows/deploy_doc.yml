@@ -66,4 +66,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            bash <(curl -s -L https://raw-github.dup4.com/Dup4/bash-script-snippet/main/deploy_gh_pages.sh) -r Dup4/blog -d /var/www/dup4.cn
+            bash <(curl -s -L https://raw-github.dup4.com/Dup4/bash-script-snippet/main/deploy_gh_pages.sh) -r Dup4/blog -d /var/docker-data/nginx/www/dup4.cn
