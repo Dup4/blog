@@ -21,16 +21,16 @@
 
 ```plain title=".gitconfig.dup4"
 [user]
-	name = Dup4
-	email = git@dup4.com
+    name = Dup4
+    email = git@dup4.com
 ```
 
 另一个是 GitLab 账号，具体信息如下：
 
 ```plain title=".gitconfig.panlyuzhi"
 [user]
-	name = panlyuzhi
-	email = panlyuzhi@hznu.edu.cn
+    name = panlyuzhi
+    email = panlyuzhi@hznu.edu.cn
 ```
 
 ### Authentication
