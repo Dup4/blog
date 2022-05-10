@@ -35,13 +35,13 @@
 
 ### Authentication
 
-首先是鉴权，对于 GitHub 或是 GitLab，如果要 push 或者拉取私有仓库（对于 GitHub），那么都需要鉴权。
+首先是鉴权，对于 GitHub 或是 GitLab，如果要 push 或者拉取私有仓库等，那么都需要鉴权。
 
 我个人比较倾向于 ssh 鉴权，
 
 我会生成两套 SSH key，一套用于 GitHub，另一套用于 GitLab。
 
-至于如何生成 SSH key，以及如何将 SSH key 添加到 GitHub/GitLab，可以参考 [GitHub 文档](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)，对于 GitLab，也是大同小异。
+至于如何生成 SSH key，以及如何将 SSH key 添加到 GitHub/GitLab，可以参考 [GitHub 文档](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)。
 
 ### Configuration
 
