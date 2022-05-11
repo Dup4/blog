@@ -5,6 +5,23 @@
 ???+ info "Contents"
     [TOC]
 
+## Write in front
+
+如果需要使用 import 功能，需要将 `Data source` 设置为 `configuration data external` 或者 `configuration and live data external`。
+
+<center>
+
+![](images/iShot2022-05-11_15.17.47.png)
+
+</center>
+
+否则：
+
+* 在 UI 界面新增新的 Team categories、Team affiliations、Team、User 等不会有 `External ID` 字段。
+* 关联的时候，不会跟数据库表中的 `externalid` 关联。
+
+社区中相关的讨论可以参考：https://github.com/DOMjudge/domjudge/issues/1574
+
 ## Basic concept
 
 ### Account
@@ -41,7 +58,7 @@ Team 与 Contest 是 **N:M** 关系，即一个 Team 可以参加多个 Contest�
 
 <center>
 
-![](images/iShot2022-05-11_09.59.55.png){ width=520px }
+![](images/iShot2022-05-11_15.22.08.png){ width=600px }
 
 </center>
 
@@ -57,7 +74,7 @@ Team categories 和 Team 是 **1:N** 关系，即一个 Team 只可以属于一�
 
 <center>
 
-![](images/iShot2022-05-11_10.09.02.png){ width=520px }
+![](images/iShot2022-05-11_15.23.29.png){ width=600px }
 
 </center>
 
@@ -66,6 +83,12 @@ Team affiliations 和 Team 是 **1:N** 关系，即一个 Team 只可以属于�
 如果需要导入 Team affiliations，可以参考[官方文档][importing-team-affiliations]。
 
 这里可能存在的一个问题在于：
+
+> 现在这个问题已经不存在了。
+>
+> 之前出现这个问题，是由于没有正确设置 Data source，可以参考[Write in front](#write-in-front)。
+>
+> 不过如果有中途才发现的，可以参考下面的步骤，修复一下。
 
 <center>
 
@@ -160,10 +183,6 @@ Team affiliations 和 Team 是 **1:N** 关系，即一个 Team 只可以属于�
 导入的结果如上。
 
 可以发现这个账号，和我们上文导入的 team 绑定在一起了。
-
-但是有个问题是 `team_id` 是系统自增的那个 `teamid`，而不是我们指定的 `externalid`。
-
-看了相关的源码，觉得这是个 bug，正在给 DOMjudge 提 Issue。
 
 ## Reference
 
