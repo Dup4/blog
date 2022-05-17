@@ -8,7 +8,7 @@
 * [Practice Link](https://codingcompetitions.withgoogle.com/codejam/round/00000000008778ec)
 * [Code Repo Link](https://github.com/Dup4/Google-Coding-Competitions/tree/main/CodeJam/2022/Round-2)
 * Score: 22
-* Rank: 1682
+* Rank: 1680
 
 ## Problems
 
