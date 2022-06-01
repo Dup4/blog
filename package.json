@@ -1,5 +1,6 @@
 {
     "private": true,
+    "packageManager": "pnpm@7.1.7",
     "scripts": {
         "build": "bash build.sh",
         "dev": "mkdocs serve",
@@ -7,7 +8,8 @@
         "lint:fix": "remark ./docs/**/*.md --quiet --frail --output"
     },
     "devDependencies": {
-        "mkdocs-render-math-ssr": "^1.0.5",
+        "mathjax-render-for-mkdocs-material": "^0.0.2",
+        "pnpm": "^7.1.7",
         "remark-cli": "^10.0.1",
         "remark-preset-lint-mkdocs-material": "^0.6.0"
     }
