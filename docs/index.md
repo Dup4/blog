@@ -1,6 +1,8 @@
 # Blog
 
 ## 2022
+
+* [Deploy DOMjudge with Docker](./2022/6/deploy-domjudge-with-docker/index.md)
 * [Google Code Jam Round 2 2022 Record](./2022/5/google-code-jam/round-2-2022/index.md)
 * [DOMjudge Team Account Import Guide](./2022/5/domjudge-team-account-import-guide/index.md)
 * [How to manage multiple git accounts](./2022/5/how-to-manage-multiple-git-accounts/index.md)
