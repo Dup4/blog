@@ -31,6 +31,7 @@
         "shellcheck",
         "smartsymbols",
         "striphtml",
+        "struct",
         "superfences",
         "tasklist",
         "twemoji",
