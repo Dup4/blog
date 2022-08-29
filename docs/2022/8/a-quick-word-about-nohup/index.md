@@ -106,7 +106,7 @@ nohup python3 a.py < /dev/null > nohup.out 2>&1 &
 
 有兴趣可以看一下这个回答 <https://superuser.com/a/846641>。
 
-如果没有显式的重定向输入和输出，有的版本的 `nohup` 会提示你如下消息
+如果没有显式的重定向输入和输出，有的版本的 `nohup` 会提示你如下信息
 
 ```bash
 nohup: ignoring input and redirecting stderr to stdout
