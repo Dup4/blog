@@ -1,6 +1,6 @@
 # 简单说说 nohup
 
-nohup 是 Linux 中的一个命令。我们可以从 [Man Page][Man Page] 中看到该命令的使用帮助。
+nohup 是 Linux 中的一个命令。我们可以从 [Man Page][man-page] 中看到该命令的使用帮助。
 
 其实我自己以前理解一直不清晰，一直以为 `nohup` 是用来让一个程序后台运行的命令，但实际上这个描述并不准确。
 
@@ -59,7 +59,7 @@ python3 a.py > a.out &
 
 > nohup - run a command immune to hangups, with output to a non-tty
 
-题外话：如果想了解 TTY 是什么，可以参考 [TTY 到底是什么？][What is TTY]
+题外话：如果想了解 TTY 是什么，可以参考 [TTY 到底是什么？][what-is-tty]
 
 可以了解到 `nohup` 除了帮助你屏蔽 `SIGHUP` 信号，还帮助重定向了输出。
 
@@ -116,5 +116,5 @@ nohup: ignoring input and redirecting stderr to stdout
 
 留给有兴趣的读者自己实验。
 
-[Man Page]: https://linux.die.net/man/1/nohup
-[What is TTY]: https://www.kawabangga.com/posts/4515
+[man-page]: https://linux.die.net/man/1/nohup
+[what-is-tty]: https://www.kawabangga.com/posts/4515
