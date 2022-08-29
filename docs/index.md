@@ -2,6 +2,7 @@
 
 ## 2022
 
+* [简单说说 nohup](./2022/8/a-quick-word-about-nohup/index.md)
 * [Why it is not recommended to use non-const reference input parameters in C++](./2022/8/why-it-is-not-recommended-to-use-non-const-reference-input-parameters-in-c++/index.md)
 * [Deploy DOMjudge with Docker](./2022/6/deploy-domjudge-with-docker/index.md)
 * [Google Code Jam Round 2 2022 Record](./2022/5/google-code-jam/round-2-2022/index.md)
