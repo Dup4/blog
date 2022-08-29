@@ -52,7 +52,9 @@ python3 a.py > a.out &
 可以从 [Signals](https://linux.die.net/Bash-Beginners-Guide/sect_12_01.html#:~:text=SIGHUP%20by%20default,shopt%20built%2Din.) 中了解到：
 
 > SIGHUP by default exits a shell. An interactive shell will send a SIGHUP to all jobs, running or stopped;
+>
 > see the documentation on the disown built-in if you want to disable this default behavior for a particular process.
+>
 > Use the huponexit option for killing all jobs upon receiving a SIGHUP signal, using the shopt built-in.
 
 当退出 shell 时，会向所有的任务发送 `SIGHUP` 信号，所以没有做特殊处理的话，所有任务都会被中断。
@@ -80,8 +82,11 @@ nohup python3 a.py &
 其实从 [Man Page](https://linux.die.net/man/1/nohup#:~:text=If%20standard%20input%20is%20a%20terminal%2C%20redirect%20it%20from%20/dev/null.%20If%20standard%20output%20is%20a%20terminal%2C%20append%20output%20to%20%27nohup.out%27%20if%20possible%2C%20%27%24HOME/nohup.out%27%20otherwise.%20If%20standard%20error%20is%20a%20terminal%2C%20redirect%20it%20to%20standard%20output.%20To%20save%20output%20to%20FILE%2C%20use%20%27nohup%20COMMAND%20%3E%20FILE%27.) 中可以看到重定向策略：
 
 > If standard input is a terminal, redirect it from /dev/null.
+>
 > If standard output is a terminal, append output to 'nohup.out' if possible, '$HOME/nohup.out' otherwise.
+>
 > If standard error is a terminal, redirect it to standard output.
+>
 > To save output to FILE, use 'nohup COMMAND > FILE'.
 
 * `stdin` （标准输入） 会被重定向到 `/dev/null`
