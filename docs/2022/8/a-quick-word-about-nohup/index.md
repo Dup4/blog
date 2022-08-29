@@ -37,6 +37,8 @@ python3 a.py &
 
 `&` 表示后台运行一个命令，但是并不会重定向输出，它仍然会输出到你的屏幕上，即 `stdout` 和 `stderr`。
 
+> 有兴趣深入了解可以看下这个问题：<https://stackoverflow.com/questions/13338870/what-does-at-the-end-of-a-linux-command-mean>
+
 并且如果只用 `&` 的话，在运行过程中，你退出了当前 shell，这个程序仍然会退出。
 
 ```bash
