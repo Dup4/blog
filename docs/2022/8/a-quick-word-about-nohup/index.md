@@ -39,7 +39,7 @@ python3 a.py &
 
 > 有兴趣深入了解可以看下这个问题：<https://stackoverflow.com/questions/13338870/what-does-at-the-end-of-a-linux-command-mean>
 
-并且如果只用 `&` 的话，在运行过程中，你退出了当前 shell，这个程序仍然会退出。
+并且如果只用 `&` 的话，在运行过程中，当退出了当前 shell，这个程序仍然会退出。
 
 ```bash
 python3 a.py > a.out &
