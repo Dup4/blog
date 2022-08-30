@@ -89,9 +89,9 @@ nohup python3 a.py &
 >
 > To save output to FILE, use 'nohup COMMAND > FILE'.
 
-* `stdin` （标准输入） 会被重定向到 `/dev/null`
-* `stdout` （标准输出） 被重定向到 `nohup.out` 或 `$HOME/nohup.out`
-* `stderr` （标准错误输出） 会被重定向到 `stdout` （标准输出）
+* `stdin` （标准输入）会被重定向到 `/dev/null`
+* `stdout` （标准输出）被重定向到 `nohup.out` 或 `$HOME/nohup.out`
+* `stderr` （标准错误输出）会被重定向到 `stdout` （标准输出）
 
 我们可以认为：
 
