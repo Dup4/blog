@@ -1,6 +1,6 @@
 {
     "private": true,
-    "packageManager": "pnpm@7.1.7",
+    "packageManager": "pnpm@7.31.0",
     "scripts": {
         "build": "bash build.sh",
         "dev": "mkdocs serve",
@@ -9,7 +9,7 @@
     },
     "devDependencies": {
         "mathjax-render-for-mkdocs-material": "^0.0.2",
-        "pnpm": "^7.1.7",
+        "pnpm": "^7.31.0",
         "remark-cli": "^10.0.1",
         "remark-preset-lint-mkdocs-material": "^0.6.0"
     }
