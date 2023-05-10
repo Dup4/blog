@@ -1,5 +1,9 @@
 # Blog
 
+## 2023
+
+* [一个 Python 3 中的浅拷贝问题](./2023/5/a-shallow-copy-problem-in-python3/index.md)
+
 ## 2022
 
 * [简单说说 nohup](./2022/8/a-quick-word-about-nohup/index.md)
