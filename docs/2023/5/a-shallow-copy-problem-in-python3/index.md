@@ -1,3 +1,7 @@
+---
+publishedAt: '2023-05-10'
+---
+
 # A shallow copy problem in Python 3
 
 最近在开发 `board-spider` 过程中，遇到一个深拷贝的问题，感觉挺别致的。
