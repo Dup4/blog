@@ -1,7 +1,3 @@
----
-publishedAt: '2023-05-10'
----
-
 # A shallow copy problem in Python 3
 
 最近在开发 `board-spider` 过程中，遇到一个深拷贝的问题，感觉挺别致的。
@@ -25,7 +21,7 @@ def work(teams: typing.List[Team]):
 
 因为每个 `team.extra` 都指向那个 `{}` 对象。
 
-所以我们可以在 `__init__` 作用域内，给它赋予一个默认值，比如：
+其中一个解决方案是，在 `__init__` 作用域内，给它赋予一个默认值，比如：
 
 ```python3
 import typing

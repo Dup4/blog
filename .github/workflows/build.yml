@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://json-schema.org/draft-07/schema#
-name: Build Doc
+name: Build
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-doc:
+  build:
     name: Build documentation
     runs-on: ubuntu-latest
     steps:
