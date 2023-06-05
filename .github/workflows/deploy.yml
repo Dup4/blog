@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://json-schema.org/draft-07/schema#
-name: Deploy Doc
+name: Deploy
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy-doc:
+  deploy:
     name: Deploy documentation
     runs-on: ubuntu-latest
     steps:

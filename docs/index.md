@@ -2,6 +2,7 @@
 
 ## 2023
 
+* [一个关于 SSH、ZSH、Proxy 和 IPv6 的问题](./2023/6/a-problem-about-ssh-zsh-proxy-ipv6/index.md)
 * [一个 Python 3 中的浅拷贝问题](./2023/5/a-shallow-copy-problem-in-python3/index.md)
 
 ## 2022
