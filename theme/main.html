@@ -3,3 +3,12 @@
 {% block site_nav %}
   <!-- Nothing to see here, move along -->
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script
+    async src="https://umami.dup4.com/script.js"
+    data-website-id="bed2bf22-7248-4c02-a445-2bcf7d876ebf"
+  >
+  </script>
+{% endblock %}
